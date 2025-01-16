@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fa3de608-2cfe-4339-8bc0-daa428081f73">
+	<property name="ireport.zoom" value="1.3310000000000008"/>
+	<property name="ireport.x" value="33"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM jabatan]]>
+	</queryString>
+	<field name="id_jabatan" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kode_jabatan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_jabatan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="39" y="34" width="100" height="20" uuid="ef7195ac-6e71-4d82-aac0-67cd60836c60"/>
+				<text><![CDATA[id_jabatan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="193" y="34" width="100" height="20" uuid="29ca5ab8-8fec-4d84-9e8e-243bc74a96be"/>
+				<text><![CDATA[kode_jabatan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="359" y="34" width="100" height="20" uuid="862699f0-53ab-4334-bcec-380e7e02b5eb"/>
+				<text><![CDATA[nama_jabatan]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="60" splitType="Stretch">
+			<textField>
+				<reportElement x="51" y="26" width="100" height="20" uuid="5a8cc2ba-1be8-4ebe-b6ab-ce7e35870d62"/>
+				<textFieldExpression><![CDATA[$F{id_jabatan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="193" y="26" width="100" height="20" uuid="47eb09b2-3481-40b3-8d51-ceeb7b3358a7"/>
+				<textFieldExpression><![CDATA[$F{kode_jabatan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="359" y="26" width="100" height="20" uuid="94297f7f-7688-4cdd-bb0f-9c93398e78f5"/>
+				<textFieldExpression><![CDATA[$F{nama_jabatan}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
